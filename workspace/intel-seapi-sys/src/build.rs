@@ -137,6 +137,8 @@ fn cmake(install_folder_path: &Path)
 		
 		config.define("CMAKE_SYSTEM_NAME", cmake_system_name);
 	}
+
+	config.define("USE_MUSL_LIBC", "ON");
 	
 	config.build();
 }
